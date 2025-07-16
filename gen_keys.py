@@ -18,7 +18,7 @@ def sign_message(challenge, filename="secret_key.txt"):
 
     w3 = Web3()
     print(challenge)
-    message = encode_defunct(challenge)
+    message = encode_defunct(b"{challenge}")
 
     # TODO recover your account information for your private key and sign the given challenge
     # Use the code from the signatures assignment to sign the given challenge
