@@ -17,7 +17,7 @@ def sign_message(challenge, filename="secret_key.txt"):
     assert(len(key) > 0), "Your account secret_key.txt is empty"
 
     w3 = Web3()
-    print(challenge)
+    print(type(challenge))
     message = encode_defunct(b"{challenge}")
 
     # TODO recover your account information for your private key and sign the given challenge
